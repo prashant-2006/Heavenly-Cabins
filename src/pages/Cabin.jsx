@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import CabinTable from "../features/cabins/cabinTable";
+import CabinTable from "../features/cabins/CabinTable";
 import AddCabinForm from "../features/cabins/AddCabinForm";
 import Modal from "../ui/Modal";
 import { useSearchParams } from "react-router-dom";
