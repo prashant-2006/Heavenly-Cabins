@@ -27,9 +27,10 @@ Heavenly Cabins is a robust, full-stack administrative dashboard designed to han
 * **React Query Integration:** Completely decoupled UI state from server state. Leveraged React Query for intelligent data fetching, background synchronization, and caching, dramatically reducing redundant network requests.
 * **Optimistic UI Updates:** Implemented optimistic mutations for booking status changes (check-in/check-out) to ensure a zero-latency feel for the end-user.
 
-### 🔒 Role-Based Access Control (RBAC) & Security
-* **Supabase Authentication:** Secure admin login and onboarding workflow utilizing Supabase Auth.
-* **Row-Level Security (RLS):** Database operations are protected by strict RLS policies, ensuring only authorized administrative personnel can mutate cabin or booking records.
+### 🔒 Secure Authentication & Protected Routing
+* **Supabase Authentication:** Engineered a secure login and onboarding workflow strictly for administrative personnel using Supabase Auth.
+* **Protected App State:** Implemented React Router protected routes to prevent unauthenticated access to the dashboard, ensuring business data is only exposed to verified admins.
+* **Row-Level Security (RLS):** Database operations are protected by Supabase RLS policies, securing cabin and booking mutations at the database layer.
 
 ### 📊 Interactive Data Visualization
 * **Recharts Dashboard:** Built dynamic, responsive charts to visualize complex, aggregated booking data, revenue trends, and occupancy rates over custom date ranges.
